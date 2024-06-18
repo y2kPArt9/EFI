@@ -1,8 +1,0 @@
-#!ipxe
-
-:view
-isset ${memsize} && echo ${manufacturer} | ${product} | ${platform} | ${arch} | ${memsize} MiB || echo ${manufacturer} | ${product} | ${platform} | ${arch}
-echo
-chain tftp://${next-server}/gpxex.pxe || autoboot
-
-
